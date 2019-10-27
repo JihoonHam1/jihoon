@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계에사안기</title>
+    <style>
+        table {
+            width : 300px;
+            height : 300px;
+            
+            border : 1px solid black;
+        }
+        th, td {
+            border : 1px solid black;
+            padding : auto 0;
+        }
+    
+    </style>
+</head>
+<body>
+<!-- 	<form action = "plus" method = "get">
+		<input type ="text" name = "firstValue">
+		+ <input type ="text" name = "secondValue"> <br>
+		<input type = "submit" value = "결과보기">
+		<input type = "reset" value = "취소">
+	
+	</form> -->
+	
+	<!-- <form action = "cal" method = "get">
+		<input type = "text" name = "firstValue">
+		<select name = "cal">
+			<option value = "+">+</option>
+			<option value = "-">-</option>
+			<option value = "*">*</option>
+			<option value = "/">/</option>
+		</select>
+		<input type = "text" name = "secondValue">
+		<input type = "submit" value = "결과보기">
+		<input type = "reset" value = "취소">
+	</form> -->
+	
+    <h2>오늘의 메뉴</h2>
+    <table>
+        <thead>
+            <tr>
+            <th>메뉴</th>    
+            <th>품목</th>    
+            <th>가격</th>    
+            </tr>
+        </thead>
+        <tr>
+        <td rowspan = "3">메인메뉴</td>
+        <td>한우버거</td>
+        <td>5000원</td>
+        </tr>
+        <tr>
+        <td>밥버거</td>
+        <td>4500원</td>
+        </tr>
+        <tr>
+        <td>치즈버거</td>
+        <td>4000원</td>
+        </tr>
+        <tr>
+        <td rowspan = "2">사이드메뉴</td>
+        <td>감자튀김</td>
+        <td>1500원</td>
+        </tr>
+        <tr>
+        <td>어니언링</td>
+        <td>1700원</td>
+        </tr>
+        <tr>
+        <td rowspan = "4">음료메뉴</td>
+        <td>콜라</td>
+        <td>1000원</td>
+        </tr>
+        <tr>
+        <td>사이다</td>
+        <td>1000원<td>
+        </tr>
+        <tr>
+        <td>커피</td>
+        <td>1500원</td>
+        </tr>
+        <tr>
+        <td>밀크쉐이크</td>
+        <td>2500원</td>
+        </tr>
+    </table><br><br>
+	<form action = "/order" method = "get">
+		메인메뉴 : 
+		<select name = "main">
+			<option value = "top">햄버거를 선택하세요.</option>
+			<option value = "5000">한우버거</option>
+			<option value = "4500">밥버거</option>
+			<option value = "4000">치즈버거</option>
+		</select> <br> <br>
+		사이드메뉴 : 
+		<select name = "side">
+			<option value = "top">사이드를 선택하세요.</option>
+			<option value = "1500">감자튀김</option>
+			<option value = "1700">어니언링</option>
+		</select> <br> <br>
+		음료메뉴 : 
+		<select name = "drink">
+			<option value = "top">음료를 선택하세요.</option>
+			<option value = "1000">콜라</option>
+			<option value = "1000">사이다</option>
+			<option value = "1500">커피</option>
+			<option value = "2500">밀크쉐이크</option>
+		</select><br> <br>
+		
+	<input type = "submit" value = "주문">
+	<input type = "reset" value = "취소">
+	</form>
+	
+</body>
+</html>
